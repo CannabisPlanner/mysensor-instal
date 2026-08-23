@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>MySensor Hub - Web Instalacija</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    esp-web-install-button {
+      --esp-tools-button-color: #0d6efd;
+    }
+    p.napomena {
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>MySensor Hub</h1>
+  <p>Spoji ESP32 na racunalo preko USB kabla, zatim klikni gumb ispod.</p>
+
+  <esp-web-install-button manifest="manifest.json">
+    <button slot="activate">Instaliraj Firmware</button>
+    <span slot="unsupported">Ovaj browser ne podrzava Web Serial. Koristi Chrome ili Edge na racunalu.</span>
+    <span slot="not-allowed">Web Serial zahtijeva HTTPS.</span>
+  </esp-web-install-button>
+
+  <p class="napomena">
+    Radi samo u Chrome ili Edge na desktopu (Windows/Mac/Linux/ChromeOS).
+    Ne radi na mobitelu niti u Firefox/Safari.
+  </p>
+</body>
+</html>
