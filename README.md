@@ -10,7 +10,7 @@ This installer flashes the MySensor firmware directly to your ESP32 board using 
 
 Watch the full step-by-step setup, from flashing the firmware to connecting the sensor to the app:
 
-▶️ **[Watch on YouTube](https://youtube.com/YOUR_VIDEO_LINK_HERE](https://www.youtube.com/watch?v=27Nmx-xaarU)**
+▶️ [Watch on YouTube](https://www.youtube.com/watch?v=27Nmx-xaarU)
 
 ---
 
